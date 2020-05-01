@@ -1,0 +1,16 @@
+server:
+  port: 1998
+spring:
+  application:
+    name: aiclown-provider
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #当前数据源操作类型
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/clound?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  #所有entity别名类所有包
+  type-aliases-package: com.hd.entity

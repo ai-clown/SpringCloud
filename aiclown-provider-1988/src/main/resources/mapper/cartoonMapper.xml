@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hd.mapper.CartoonMapper">
+    <insert id="createCartoon"
+            parameterType="com.hd.entity.Cartoon"
+            useGeneratedKeys="true" keyProperty="cartoonId">
+       insert into cartoon
+       (cartoon_name,cartoon_desc,cartoon_image,cartoon_url)values
+       (#{cartoonName},#{cartoonDesc},#{cartoonImage},#{cartoonUrl});
+    </insert>
+    <resultMap id="BaseCartoonResult" type="com.hd.entity.Cartoon">
+        <id column="cartoon_id" property="cartoonId" jdbcType="BIGINT"></id>
+        <id column="cartoon_name" property="cartoonName" jdbcType="VARCHAR"></id>
+        <id column="cartoon_desc" property="cartoonDesc" jdbcType="VARCHAR"></id>
+        <id column="cartoon_image" property="cartoonImage" jdbcType="VARCHAR"></id>
+        <id column="cartoon_url" property="cartoonUrl" jdbcType="VARCHAR"></id>
+    </resultMap>
+    <select id="getCartoonById" resultMap="BaseCartoonResult" parameterType="Long">
+      select * from cartoon where cartoon_id = #{cartoonId}
+    </select>
+</mapper>

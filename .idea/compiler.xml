@@ -7,9 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="aiclown-customer-80" />
-        <module name="aiclown-provider-1998" />
+        <module name="aiclown-eureka-server-2000" />
+        <module name="aiclown-provider-1988" />
         <module name="aiclown-api-commons" />
+        <module name="aiclown-provider-1998" />
+        <module name="aiclown-customer-80" />
+        <module name="aiclown-eureka-server-1999" />
       </profile>
     </annotationProcessing>
   </component>

@@ -11,6 +11,9 @@
         <module>aiclown-provider-1998</module>
         <module>aiclown-customer-80</module>
         <module>aiclown-api-commons</module>
+        <module>aiclown-eureka-server-1999</module>
+        <module>aiclown-eureka-server-2000</module>
+        <module>aiclown-provider-1988</module>
     </modules>
     <packaging>pom</packaging>
 

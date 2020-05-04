@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>aiclown-provider-1998</artifactId>
+    <artifactId>aiclown-provider-1988</artifactId>
     <dependencies>
         <!-- 引入eureka client-->
         <dependency>

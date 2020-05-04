@@ -1,0 +1,14 @@
+server:
+  port: 1999
+eureka:
+  instance:
+    #eureka服务器的实例名称
+    hostname: eureka1999.com
+  client:
+    #false表示不向注册中心注册自己
+    register-with-eureka: false
+    #false表示自己端就是注册中心不需要检索自己
+    fetch-registry: false
+      #设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
+    service-url:
+      defaultZone: http://eureka2000.com:2000/eureka/
